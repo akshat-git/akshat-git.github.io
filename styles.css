@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  margin: 10px 0;
+  text-align: center;
+}
+
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+.photo-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.photo-row.two-images img {
+  max-width: 300px;
+  height: auto;
+}
+
+.photo-row.four-images img {
+  max-width: 200px;
+  height: auto;
+}
+
+img {
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.projects, .hobbies {
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+.activities {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-size: 1em;
+  text-align: center;
+  color: #fff;
+  background-color: #4CAF50;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.activity, .project, .hobby {
+  padding: 15px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+}
+
