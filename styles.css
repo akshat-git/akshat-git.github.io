@@ -32,7 +32,6 @@ section {
   gap: 20px; /* Add space between images */
   margin-bottom: 20px; /* Space between rows */
 }
-
 .photo-row.two-images img {
   max-width: 300px;
   height: auto;
