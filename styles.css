@@ -15,7 +15,7 @@ header {
 }
 
 h1, h2, h3 {
-  margin: 10px 0;
+  margin: 15px 0;
   text-align: center;
 }
 
@@ -25,16 +25,30 @@ section {
 }
 
 /* Photo rows */
+img{
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for visual appeal */
+}
 .photo-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* Align horizontally at the center */
   gap: 20px; /* Add space between images */
   margin-bottom: 20px; /* Space between rows */
+  
+}
+.photo-row.landscape img {
+  max-height: 400px;
+  width:auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+  
 }
 .photo-row.two-images img {
-  max-width: 300px;
-  height: auto;
+  max-height: 400px;
+  max-width: 250px;
 }
 
 .photo-row.four-images img {
@@ -43,8 +57,8 @@ section {
 }
 
 .photo-row.three-images img {
-  max-width: 150px;
-  max-height: 200px;
+  max-width: 200px;
+  max-height: 300px;
   height: auto;
 }
 
@@ -52,14 +66,6 @@ section {
 figure {
   text-align: center;
   margin: 0;
-  max-width: 200px; /* Set a fixed width for each figure */
-}
-
-figure img {
-  width: 100%; /* Make images responsive */
-  height: auto;
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for visual appeal */
 }
 
 figcaption {
