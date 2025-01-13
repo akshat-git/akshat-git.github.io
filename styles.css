@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  background-color: #4CAF50;
+  background-color: #8e6fff;
   color: white;
   padding: 10px 20px;
   text-align: center;
@@ -27,7 +27,13 @@ section {
 /* Photo rows */
 img{
   border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for visual appeal */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for visual appeal */
+  transition: transform 0.15s ease-in-out;
+}
+img:hover{
+  transform: translateY(-2px);
+  transform: scale(1.05);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
 }
 .photo-row {
   display: flex;
@@ -62,6 +68,14 @@ img{
   height: auto;
 }
 
+.contact-icons img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+
 /* Figures and images */
 figure {
   text-align: center;
@@ -93,19 +107,22 @@ figcaption {
 /* Buttons */
 .btn {
   display: inline-block;
-  margin: 10px 0;
-  padding: 10px 20px;
-  font-size: 1em;
-  text-align: center;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
   color: #fff;
-  background-color: #4CAF50;
-  text-decoration: none;
+  background: linear-gradient(135deg, #8e6fff, #4489ff);
+  border: none;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, transform 0.2s;
+  cursor: pointer;
 }
 
 .btn:hover {
-  background-color: #45a049;
+  background: linear-gradient(135deg, #4489ff, #8e6fff);
+  transform: translateY(-2px);
 }
 
 /* Woodburning art layout */
